@@ -1,15 +1,33 @@
 import React from 'react';
 
 import {createStackNavigator} from '@react-navigation/stack';
-import {Splash, GetStarted} from '../pages';
+import {Splash, GetStarted, Login, Register} from '../pages';
 
 const Stack = createStackNavigator();
 
 function Router() {
   return (
-    <Stack.Navigator>
-      <Stack.Screen name="Splash" component={Splash} />
-      <Stack.Screen name="GetStarted" component={GetStarted} />
+    <Stack.Navigator initialRouteName="Splash">
+      <Stack.Screen
+        name="Splash"
+        component={Splash}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="GetStarted"
+        component={GetStarted}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Login"
+        component={Login}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="Register"
+        component={Register}
+        options={{headerShown: false}}
+      />
     </Stack.Navigator>
   );
 }
