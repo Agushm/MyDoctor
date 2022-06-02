@@ -10,6 +10,7 @@ export const colors = {
   secondary: mainColor.dark,
   white: 'white',
   black: 'black',
+  border: mainColor.grey2,
   input: {
     border: mainColor.grey2,
   },

@@ -1,6 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text} from 'react-native';
 import {TouchableOpacity} from 'react-native-gesture-handler';
+import {fonts} from '../../../utils';
 
 const Button = ({title, btnColor, textColor, onPress}) => {
   return (
@@ -19,9 +20,8 @@ const styles = StyleSheet.create({
   }),
   title: textColor => ({
     fontSize: 18,
-    fontWeight: '600',
     color: textColor,
     textAlign: 'center',
-    fontFamily: 'Nunito-SemiBold',
+    fontFamily: fonts.primary[600],
   }),
 });

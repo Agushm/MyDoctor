@@ -16,7 +16,12 @@ const Register = ({navigation}) => {
         <SizedBox height={10} />
         <Input label="Password" />
         <SizedBox height={40} />
-        <Button btnColor="#0BCAD4" title="Continue" textColor="white" />
+        <Button
+          btnColor="#0BCAD4"
+          title="Continue"
+          textColor="white"
+          onPress={() => navigation.navigate('UploadPhoto')}
+        />
       </View>
     </View>
   );
